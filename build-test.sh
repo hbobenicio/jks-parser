@@ -1,7 +1,7 @@
 #!/bin/bash
 set -eu -o pipefail
 
-CC="clang-15"
+CC="${CC:-clang}"
 PKG_CONFIG_DEPS="openssl"
 
 CFLAGS+=" -std=c18 -Wall -Wextra -Wpedantic -Wno-vla -Wswitch-enum"
